@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -44,15 +46,20 @@ header{
 }
 
 .nav{
-    height: 10rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .nav-list{
     list-style: none;
     display: flex;
+    text-align: center;
 }
 
 .nav-item{
@@ -76,7 +83,8 @@ header{
 
 .logo-box{
     display: block;
-    width: 8rem;
+    font-size: 4rem;
+    /* letter-spacing: 20px; */
 }
 
 .landing-page{
@@ -119,9 +127,29 @@ header{
     margin-bottom: 1rem;
 }
 
+.rotate{
+    transform: rotate(15deg);
+}
+
+.distantaHamming2Cuvinte{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    /* background-color: red; */
+    justify-content: space-between;
+    align-items: center;
+}
+
 .description{
     color: #929FC5;
     margin-bottom: 2.5rem;
+}
+
+.description .math{
+    width: 30px;
+    height: 30px;
 }
 
 .search{
@@ -140,15 +168,22 @@ header{
 }
 
 .search-btn{
-    width: 10rem;
+    /* width: 10rem; */
     background-image: linear-gradient(to right, #FF83D5,#FFCCB0);
     color: #fff;
     cursor: pointer;
-    margin-left: -10rem;
+    /* margin-left: -10rem; */
+    outline: none;
 }
 
 .search-btn:hover{
     background-image: linear-gradient(to left, #FF83D5,#FFCCB0);
+    outline: none;
+}
+
+.search-btn:active,
+.search-btn:focus{
+    outline: none;
 }
 
 .sm-list{
@@ -179,7 +214,18 @@ header{
 .image-group{
     text-align: center;
     position: relative;
+    display: flex;
+    /* background: red; */
+    align-items: center;
+    justify-content: space-around;
 }
+
+
+.image-group i{
+    font-size: 8rem;
+    color: #f2f2f2;
+}
+
 
 .blob-bean{
     position: absolute;
@@ -220,6 +266,20 @@ header{
 }
 
 
+.hide{
+    display: none;
+}
+
+.encodeDecode{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
 @keyframes move-up{
     from{
         transform: translateY(0);
@@ -253,6 +313,15 @@ header{
 @media screen and (max-width: 768px){
     .nav{
         align-items: center;
+        
+    }
+
+    .nav-list{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding-bottom: 1%;
     }
 
     .content{

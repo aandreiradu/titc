@@ -1,0 +1,24 @@
+Pentru vizualiarea proiectului este necesar sa deschidem fisierul index.html cu unul dintre
+urmatoarele browsere: Google Chrome / Mozilla Firefox, Microsoft Edge.
+
+Utilizare : Fiecare subiect din cele 4 are creat o sectiune specifica alcatuita dupa cum urmeaza:
+	-> InputText : casuta pentru introducerea datelor de intrare
+	-> ButonDeGenerare: apeleaza fiecare functie specifica sectiunii.
+	-> OutputModal: fiecarei sectiuni ii este atribuita o alerta care va arata rezultatul
+
+
+
+Pentru o vizualizare mai ampla a calculelor, am lasat log-uri pentru fiecare tip de prbolema.
+De ex, pentru calcularea distantei hamming a unui cod liniar, dupa introducerea codului si 
+apasarea butonului Calculeaza, putem deschide consola (click dreapta -> Inspect -> Console),
+unde putem vedea vectorul de distante. Pentru algoritmul de codare Hauffman, regasim 
+vectorul de coduri asociat fiecarui caracter introdus.
+
+
+Pentru vizualizarea codului vom proceda dupa cum urmeaza:
+	-> index.html : reprezinta scheletul proiectului. Codul sursa poate fi deschis 
+utilizand un editor de text(Notepad++,Visual Studio Code etc)
+	-> style.css: reprezinta partea de stilizare a proiectului. Pentru a vizualiza codul
+sursa, procedam ca la pasul anterior.
+	-> script.js: reprezinta fisierul  in care au fost implementate toate functiile.
+Pentru vizualiare putem folosi: Notepad,Visual Studio code, etc.

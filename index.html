@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miro</title>
+    <title>Teoria Informatiei Si Teoria Codurilor</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,61 +13,153 @@
         <div class="container">
             <nav class="nav">
                 <a href="" class="logo-box hue-shift">
-                    <img src="images/logo.png" alt="">
+                    TITC
                 </a>
-
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">About Me</a>
+                        <a href="#dHamming" class="nav-link hue-shift">Distanta Hamming</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Case Study</a>
+                        <a href="#numereHamming" class="nav-link hue-shift">Numere Hamming</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">FAQ</a>
+                        <a href="#huffman" class="nav-link hue-shift">Huffman</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section class="landing-page">
+    <section class="landing-page" id="hammingDistance">
         <div class="container">
             <div class="content">
                 <div class="content-details">
-                    <h1 class="title">Time travel to the future</h1>
+                    <h1 class="title">Teoria Informatiei Si Teoria Codurilor</h1>
                     <p class="description">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi omnis ab adipisci quidem libero facere eius fugiat unde culpa ipsa?
+                        Proiect final pentru TITC, care trateaza urmatoarele subiecte: Distanta Hamming intre doua cuvinte de cod.
+                        Distanta Hamming a unui cod liniar. Generarea primelor N numere Hamming.Algorituml de codare/decodare Huffman.
                     </p>
-                    <div class="search">
-                        <input type="text" class="search-bar" placeholder="Your email address" required>
-                        <input type="button" class="search-btn hue-shift" value="Join">
-                    </div>
-                    <div class="sm-list">
-                        <a href="#" class="sm-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="sm-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="sm-link">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="sm-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
                 </div>
-                <div class="image-group">
-                    <img src="images/liq-5.png" alt="" class="blob-large">
-                    <img src="images/liq-4.png" alt="" class="blob-bean">
+                <div class="image-group rotate">
+                    <i class="fas fa-infinity blob-large"></i>
+                    <i class="fas fa-square-root-alt blob-bean"></i>
                 </div>
             </div>
         </div>
-
-        <img src="images/liq-1.png" alt="" class="blob blob-1 hue-shift">
-        <img src="images/liq-2.png" alt="" class="blob blob-2 hue-shift">
-        <img src="images/liq-3.png" alt="" class="blob blob-3 hue-shift">
-        <img src="images/liq-6.png" alt="" class="blob blob-4 hue-shift">
     </section>
+
+    <!-- distanta hamming dintre 2 cuvinte -->
+    <section class="landing-page" id="dHamming">
+        <div class="container">
+            <div class="content">
+                <div class="content-details">
+                    <h1 class="title">
+                        Distanta Hamming intre doua cuvinte de cod
+                    </h1>
+                    <p class="description">
+                        Distanta Hamming intre doua siruri de lungime egala reprezinta numarul de pozitii pentru care simbolurile corespunzatoare sunt diferite. 
+                    </p>
+                </div>
+                <div class="content-details">
+                    <p class="description">
+                        Exemplu. Calculati distanta Hamming dintre doua cuvinte de cod
+                    </p>
+                    <div class="search distantaHamming2Cuvinte">
+                        <input type="text" class="search-bar" placeholder="Introduceti primul cuvant" required id="hammingDistanceWord1">
+                        <input type="text" class="search-bar" placeholder="Introduceti al doilea cuvant" required id="hammingDistanceWord2">
+                        <input type="button" class="search-btn hue-shift" value="Calculeaza distanta" id="hammingDistanceBtn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- distanta hamming a unui cod -->
+    <section class="landing-page" id="dHamming">
+        <div class="container">
+            <div class="content">
+                <div class="content-details">
+                    <h1 class="title">
+                        Distanta Hamming a unui cod liniar
+                    </h1>
+                    <p class="description">
+                        Se numeste distanta Hamming a codului liniar 
+                        C ⊆ Zₐ² cea mai mica distanta Hamming dintre elementele codului :<br> d = min d(<strong>v,w</strong>)
+                    </p>
+                </div>
+                <div class="content-details">
+                    <p class="description">
+                        Exemplu. Calculati distanta Hamming a unui cod liniar
+                    </p>
+                    <div class="search distantaHamming2Cuvinte">
+                        <input type="text" class="search-bar" placeholder="Introduceti codul, separat prin virgula(Ex: 001,111)" required id="hammingDistanceCode">
+                        <input type="button" class="search-btn hue-shift" value="Calculeaza distanta codului" id="hammingDistanceCodeBtn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- generarea primelor N numere Hamming -->
+    <section class="landing-page" id="numereHamming">
+        <div class="container">
+            <div class="content">
+                <div class="content-details">
+                    <h1 class="title">
+                        Generarea primelor numere Hamming
+                    </h1>
+                    <p class="description">
+                        Numerele Hamming sunt acele numere care au ca factori primi numerele 2, 3 si 5.
+                    </p>
+                </div>
+                <div class="content-details">
+                    <p class="description">
+                        Exemplu. Generati primele N numere Hamming
+                    </p>
+                    <div class="search distantaHamming2Cuvinte">
+                        <input type="text" class="search-bar" placeholder="Cate numere doriti sa generati?" required id="inputGenerateHamming">
+                        <!-- <input type="text" class="search-bar" placeholder="" required id="resultGenerateHamming"> -->
+                        <input type="button" class="search-btn hue-shift" value="Genereaza" id="hammingGenerateBtn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- huffman -->
+    <section class="landing-page" id="huffman">
+        <div class="container">
+            <div class="content">
+                <div class="content-details">
+                    <h1 class="title">
+                        Algoritmul de codere/decodare Huffman
+                    </h1>
+                    <p class="description">
+                        Algoritmul Huffman este singurul algoritm care conduce la un cod
+                        in care lungimea medie a cuvintelor de cod pentru codarea simbol
+                        cu simbol este minima.
+                    </p>
+                </div>
+                <div class="content-details">
+                    <p class="description">
+                        Exemplu.
+                    </p>
+                    <div class="search distantaHamming2Cuvinte">
+                        <input type="text" class="search-bar" placeholder="Introduceti cuvantul pe care doriti sa-l codati" required id="huffmanEncodeInput">
+                        <!-- <input type="text" class="search-bar" placeholder="Introduceti cuvantul pe care doriti sa-l decodati" required id="huffmanDecodeInput" style="margin: 2rem 0;"> -->
+                        <div class="encodeDecode">
+                            <input type="button" class="search-btn hue-shift" value="Codare" id="huffmanEncode">
+                            <!-- <input type="button" class="search-btn hue-shift" value="Decodare" id="huffmanDecode"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
